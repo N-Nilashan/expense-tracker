@@ -2,60 +2,50 @@
 export default {
     darkMode: ["class"],
     content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-  	extend: {
-  		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
-  			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
-  			}
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
-  },
-  plugins: [require("tailwindcss-animate")],
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    DEFAULT: 'hsl(34, 89%, 50%)', // Warm Orange
+                    foreground: 'hsl(34, 89%, 95%)', // Soft Cream
+                },
+                secondary: {
+                    DEFAULT: 'hsl(155, 40%, 45%)', // Forest Green
+                    foreground: 'hsl(155, 40%, 90%)', // Pale Mint
+                },
+                muted: {
+                    DEFAULT: 'hsl(42, 15%, 60%)', // Sandstone Beige
+                    foreground: 'hsl(42, 15%, 85%)', // Light Sand
+                },
+                accent: {
+                    DEFAULT: 'hsl(12, 80%, 55%)', // Vibrant Coral
+                    foreground: 'hsl(12, 80%, 95%)', // Light Coral
+                },
+                destructive: {
+                    DEFAULT: 'hsl(0, 70%, 45%)', // Crimson
+                    foreground: 'hsl(0, 70%, 90%)', // Light Crimson
+                },
+                border: 'hsl(30, 15%, 70%)', // Soft Greyish Brown
+                input: 'hsl(30, 20%, 85%)', // Light Beige
+                ring: 'hsl(155, 40%, 65%)', // Soft Mint Green
+                chart: {
+                    '1': 'hsl(105, 50%, 45%)', // Moss Green
+                    '2': 'hsl(12, 80%, 55%)', // Coral
+                    '3': 'hsl(34, 89%, 50%)', // Orange
+                    '4': 'hsl(50, 70%, 50%)', // Mustard Yellow
+                    '5': 'hsl(0, 70%, 45%)', // Crimson
+                },
+            },
+            borderRadius: {
+                lg: '8px', // Smooth, slightly larger radius
+                md: '6px', // Slightly smaller radius
+                sm: '4px', // Sharp radius for elements like buttons
+            },
+        },
+    },
+    
 };
