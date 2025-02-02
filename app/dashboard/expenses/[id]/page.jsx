@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/alert-dialog"
 import { toast } from "sonner"
 import { useRouter } from "next/navigation"
+import EditBudget from "../_components/EditBudget"
 
 const ExpensesScreen = ({ params: paramsPromise }) => {
   const [budgetInfo, setBudgetInfo] = useState(null)
@@ -83,7 +84,10 @@ const ExpensesScreen = ({ params: paramsPromise }) => {
     <div className="p-10">
       <h2 className="text-2xl items-center  flex justify-between font-bold text-primary">My Expenses
         <div className="flex gap-2 items-center">
-          
+          <EditBudget
+            refreshData={()=>getBudgetInfo()}
+            budgetInfo={budgetInfo}
+          />
           <AlertDialog>
           <AlertDialogTrigger asChild>
                     <Button className="flex gap-2" variant="destructive"><Trash /> Delete</Button>
