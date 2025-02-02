@@ -13,5 +13,7 @@ export const Expenses = pgTable('expenses', {
     name: varchar('name').notNull(),
     amount: numeric('amount').notNull(), // Store as numeric instead of varchar
     budgetId: integer('budgetId').references(() => Budget.id),
-    createdAt: timestamp('createdAt', { withTimezone: true }).defaultNow().notNull() // Use proper timestamp
+    createdAt: timestamp('createdAt', { withTimezone: true }).defaultNow().notNull(), // Use proper timestamp
+    createdBy:varchar('createdBy').notNull()
+
 })

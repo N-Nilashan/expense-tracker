@@ -5,27 +5,26 @@ import {db} from '../../../../utils/dbConfig'
 import {  Expenses } from '../../../../utils/schema'
 import { toast } from 'sonner'
 
-const AddExpense = ({ budgetId, user }) => { 
+const AddExpense = ({ budgetId, user,refreshData }) => { 
 
   const [name,setName]= useState()
   const [amount, setAmount] = useState()
 
-const addNewExpense = async () => {
-    const parsedAmount = parseFloat(amount);
-    const validAmount = isNaN(parsedAmount) ? 0 : parsedAmount;
+    const addNewExpense = async () => {
+   
 
     const result = await db.insert(Expenses).values({
         name: name,
-        amount: validAmount,
+        amount: amount,
         budgetId: parseInt(budgetId, 10), // Ensure it's a proper integer
-        createdAt: new Date() // Directly pass Date object
+        createdAt: new Date(), // Directly pass Date object
+        createdBy:user?.primaryEmailAddress?.emailAddress,
     }).returning({ insertedId: Expenses.id });
 
-    if (result) {
-        toast('New Expense Added!');
-    } else {
-        toast.error('Failed to add expense');
-    }
+  if (result) {
+    refreshData();
+    toast('New Expense Added!');
+    } 
 };
 
 

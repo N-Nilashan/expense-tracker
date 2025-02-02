@@ -10,8 +10,8 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: 'hsl(34, 89%, 50%)', // Warm Orange
-                    foreground: 'hsl(34, 89%, 95%)', // Soft Cream
+                    DEFAULT: '#3E2723', 
+                    foreground: '#D7CCC8 ', 
                 },
                 secondary: {
                     DEFAULT: 'hsl(155, 40%, 45%)', // Forest Green
