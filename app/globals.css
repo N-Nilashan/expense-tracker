@@ -7,6 +7,8 @@
   --font-geist-sans: 'Geist', sans-serif;
   --font-geist-mono: 'Geist Mono', monospace;
   --font-roboto: 'Roboto', sans-serif;
+  --toaster-bg: white;
+  --toaster-text: black;
 }
 
 body {

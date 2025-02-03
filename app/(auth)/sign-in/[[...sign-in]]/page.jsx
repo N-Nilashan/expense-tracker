@@ -41,7 +41,7 @@ export default function Page() {
             </a>
 
             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Welcome to <span className='text-primary'>Spend Sense 💰</span> 
+              Welcome to <span className='text-primary-foreground'>Spend Sense 💰</span> 
             </h2>
 
             <p className="mt-4 leading-relaxed text-primary-foreground font-bold">

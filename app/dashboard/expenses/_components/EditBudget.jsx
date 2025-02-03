@@ -76,7 +76,7 @@ const EditBudget = ({budgetInfo,refreshData}) => {
                 <div className='mt-2'>
                   <h2 className='text-primary font-medium my-1'>Budget Name</h2>
                   <Input
-                    defaultVal  ue={budgetInfo?.name}
+                    defaultValue={budgetInfo?.name}
                     className='text-primary'
                     placeholder='e.g. Food'
                     onChange={(e) => setName(e.target.value)}
