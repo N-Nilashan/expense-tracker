@@ -49,7 +49,7 @@ const Hero = () => {
             <a
               href="#features"
             >
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#6B4226] via-[#D3A379] to-[#F5E1C8] group-hover:from-[#6B4226] group-hover:via-[#D3A379] group-hover:to-[#F5E1C8] dark:text-white  focus:ring-4 focus:outline-none focus:ring-[#D3A379] dark:focus:ring-[#6B4226]">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#6B4226] via-[#D3A379] to-[#F5E1C8] group-hover:from-[#6B4226] group-hover:via-[#D3A379] group-hover:to-[#F5E1C8] dark:text-black  focus:ring-4 focus:outline-none focus:ring-[#D3A379] dark:focus:ring-[#6B4226]">
           <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-transparent dark:text-primary">
             See Features
           </span>

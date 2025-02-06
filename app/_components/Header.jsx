@@ -24,7 +24,7 @@ export default function Header() {
         <Link href='/sign-in'>
           <button
             type="button"
-            className="text-white bg-primary hover:bg-primary focus:ring-4 focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+            className="text-black bg-primary hover:bg-primary focus:ring-4 focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
           >
             Get Started
           </button>
