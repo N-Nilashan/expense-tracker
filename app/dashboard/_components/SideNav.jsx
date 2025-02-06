@@ -51,7 +51,7 @@ const SideNav = () => {
           <div className='mt-5 '>
               {menuList.map((menu) => (
                 <Link key={menu.id} href={menu.path}>
-                  <h2 className={`text-[#3E2723] mb-2
+                  <h2 className={`text-[#3E2723] hover:bg-[#3E2723] hover:text-[#D7CCC8]  mb-2
                   flex gap-2 items-center  p-5 cursor-pointer rounded-md
                   ${path == menu.path && ''}
                   `}>
