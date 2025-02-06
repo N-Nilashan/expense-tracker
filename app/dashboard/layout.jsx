@@ -29,7 +29,7 @@ function DashboardLayout  ({ children }) {
 
     return (
         <div>
-            <div className='fixed bg-primary-foreground dark:bg-black md:w-64 hidden md:block'>
+            <div className='fixed bg-primary-foreground  md:w-64 hidden md:block'>
                 <SideNav/>
             </div >
 
