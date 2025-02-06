@@ -40,7 +40,7 @@ const Hero = () => {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              className="bg-primary hover:text-white text-primary-foreground rounded-[5px] px-5 relative inline-flex items-center justify-center p-0.5 mb-2 me-2"
+              className="bg-primary  hover:text-primary text-primary-foreground rounded-[5px] px-5 relative inline-flex items-center justify-center p-0.5 mb-2 me-2"
               href="/sign-in"
             >
               Get Started
@@ -50,7 +50,7 @@ const Hero = () => {
               href="#features"
             >
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#6B4226] via-[#D3A379] to-[#F5E1C8] group-hover:from-[#6B4226] group-hover:via-[#D3A379] group-hover:to-[#F5E1C8] dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-[#D3A379] dark:focus:ring-[#6B4226]">
-          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
             See Features
           </span>
         </button>
