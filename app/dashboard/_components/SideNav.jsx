@@ -65,7 +65,7 @@ const SideNav = () => {
               <DarkModeToggle/>
           </div>
           <div className='fixed bottom-10 p-5 flex gap-2 items-center'>
-              <UserButton text-[#3E2723]/>
+              <UserButton className= 'text-[#3E2723]'/>
               Profile
           </div>
      </div>
