@@ -48,7 +48,7 @@ const SideNav = () => {
               height={200}
           />
           </div>
-          <div className='mt-5 hover:bg-[#3E2723] text-[#D7CCC8] hover:text-[#D7CCC8]'>
+          <div className='mt-5 hover:bg-[#D7CCC8] text-[#3E2723] hover:text-[#3E2723]'>
               {menuList.map((menu) => (
                 <Link key={menu.id} href={menu.path}>
                   <h2 className={` hover:bg-primary hover:text-primary-foreground mb-2
