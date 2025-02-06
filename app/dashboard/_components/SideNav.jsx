@@ -40,7 +40,7 @@ const SideNav = () => {
         const path = usePathname()
         
   return (
-      <div className='h-screen p-5 border border-border dark:bg-[#3E2723] bg-[#D7CCC8]'>
+      <div className='h-screen p-5  bg-[#D7CCC8]'>
           <div className='ml-16'>
               <Image src={'logo2.svg'}
               alt='logo'
@@ -48,12 +48,12 @@ const SideNav = () => {
               height={200}
           />
           </div>
-          <div className='mt-5 bg-[#D7CCC8]'>
+          <div className='mt-5 '>
               {menuList.map((menu) => (
                 <Link key={menu.id} href={menu.path}>
-                  <h2 className={` hover:bg-[#D7CCC8] text-[#3E2723] hover:text-[#3E2723] mb-2
+                  <h2 className={`text-[#3E2723] mb-2
                   flex gap-2 items-center  p-5 cursor-pointer rounded-md
-                  ${path == menu.path && 'text-[#D7CCC8] bg-[#3E2723]'}
+                  ${path == menu.path && ''}
                   `}>
                       <menu.icon/>
                       {menu.name}
@@ -65,7 +65,7 @@ const SideNav = () => {
               <DarkModeToggle/>
           </div>
           <div className='fixed bottom-10 p-5 flex gap-2 items-center'>
-              <UserButton />
+              <UserButton text-[#3E2723]/>
               Profile
           </div>
      </div>
