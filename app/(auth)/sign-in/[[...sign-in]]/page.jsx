@@ -44,7 +44,7 @@ export default function Page() {
               Welcome to <span className='text-primary-foreground'>Spend Sense 💰</span> 
             </h2>
 
-            <p className="mt-4 leading-relaxed text-primary-foreground font-bold">
+            <p className="mt-4 leading-relaxed text-white font-bold">
               Effortlessly track your expenses and manage your finances with ease. Stay in control of your budget and achieve your financial goals today!
             </p>
           </div>

@@ -40,7 +40,7 @@ const SideNav = () => {
         const path = usePathname()
         
   return (
-      <div className='h-screen p-5 border border-border '>
+      <div className='h-screen p-5 border border-border bg-[#3E2723]'>
           <div className='ml-16'>
               <Image src={'logo2.svg'}
               alt='logo'
@@ -48,8 +48,8 @@ const SideNav = () => {
               height={200}
           />
           </div>
-          <div className='mt-5'>
-              {menuList.map((menu, index) => (
+          <div className='mt-5 hover:bg-[#3E2723] hover:text-[#D7CCC8]'>
+              {menuList.map((menu) => (
                 <Link key={menu.id} href={menu.path}>
                   <h2 className={` hover:bg-primary hover:text-primary-foreground mb-2
                   flex gap-2 items-center text-primary p-5 cursor-pointer rounded-md

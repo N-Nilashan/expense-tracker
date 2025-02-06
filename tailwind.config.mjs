@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
+    darkMode: ["dark"],
     content: [
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +11,7 @@ export default {
             colors: {
                 primary: {
                     DEFAULT: '#3E2723', 
-                    foreground: '#D7CCC8 ', 
+                    foreground: '#D7CCC8', 
                 },
                 
                 muted: {

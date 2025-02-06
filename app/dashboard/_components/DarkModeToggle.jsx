@@ -4,20 +4,11 @@ const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const storedMode = localStorage.getItem('darkMode');
-    if (storedMode) {
-      setDarkMode(storedMode === 'true');
-    }
-  }, []);
-
-  useEffect(() => {
-    const root = document.documentElement; // Select <html>
+    const root = document.documentElement;
     if (darkMode) {
       root.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
     } else {
       root.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
     }
   }, [darkMode]);
 
