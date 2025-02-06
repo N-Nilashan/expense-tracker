@@ -27,7 +27,7 @@ const ExpenseListTable = ({ expensesList,refreshData }) => {
         <h2>Action</h2>
       </div>
       {expensesList.map((expenses) => (
-        <div key={expenses.id} className=' grid grid-cols-4 bg-primary-foreground dark:bg-black p-2'>
+        <div key={expenses.id} className=' grid grid-cols-4 bg-[#D7CCC8] dark:bg-black p-2'>
           <h2 >{expenses.name}</h2>
           <h2>{expenses.amount}</h2>
           <h2>{new Date(expenses.createdAt).toLocaleDateString()}</h2> 
